@@ -55,6 +55,7 @@ where termdate is not null and TRIM(termdate) != '';
 ```
 - Deleting employees whose termination date is way into the future as it would be an anomaly. The termination date column is based on dates less or equal to current date.
 - Deleting rows with employees who are less than 18 years since its invalid.
+- Finally I exported the tables from MySql as csv files.
 
 
 ### Questions
