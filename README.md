@@ -11,7 +11,7 @@ The report seeks to present how employees are distributed within the organizatio
 4. [Data Cleaning](#data-cleaning)
 5. [Questions](#questions)
 7. [Findings](#findings)
-8. [Limitations](#limitations)
+
 
 ### Data Source
 The data is sourced from CSV file obtained from a youtube channel: Human Resources.csv.
@@ -96,6 +96,4 @@ group by years;
 4. Strengthen recruitment strategies in Ohio and replicate its success elsewhere.
 5. Modernize the hiring process to attract new talent.
 6. Introduce a structured internship program that offers mentorship, real-world projects, and a clear path to full-time roles for ages 18 to 24.
-### Limitations
-- Some records had negative ages and these were excluded during querying(967 records). Ages used were 18 years and above.
-- Some termination dates were far into the future and were not included in the analysis. The only term dates used were those less than or equal to the current date
+
