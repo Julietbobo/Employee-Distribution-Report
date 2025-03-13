@@ -69,6 +69,14 @@ where termdate is not null and TRIM(termdate) != '';
 
 
 ### Findings
+1. There is fairly equal gender distribution of employees in the organization, male at 50.97% and female at 46.28%.
+   
+3. There are mostly whites in the organization with native hawaiians making up the least number of employees by race.
+4. Most employees are between 25 and 54 years.
+5. 74.97% of the employees work at the headquarters while 25.03% work remotely.
+6. Auditing department has the highest turnover rate.
+7. Most employees come from Ohio.
+8. Hires have reduced over time and the terminations as well.
 ### Limitations
 - Some records had negative ages and these were excluded during querying(967 records). Ages used were 18 years and above.
 - Some termination dates were far into the future and were not included in the analysis. The only term dates used were those less than or equal to the current date
