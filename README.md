@@ -1,7 +1,8 @@
 # Employee Distribution Report
 ### Project overview.
 The report seeks to present how employees are distributed within the organization based on age-group, gender, race, their state of origin, etc
-![Screenshot (34)](https://github.com/user-attachments/assets/395bb1cc-2b2d-4fd3-b832-e09417419b33)
+![Screenshot (55)](https://github.com/user-attachments/assets/e2e9934a-46d4-4066-b61d-ccbc166f813e)
+
 
 ## Table of contents
 1. [Data Source](#data-source)
@@ -77,7 +78,7 @@ where termdate is not null and TRIM(termdate) != '';
 
 4. Most employees are between 25 and 54 years.
 5. 74.97% of the employees work at the headquarters while 25.03% work remotely.
-6. Auditing department has the highest turnover rate of 16%
+6. Auditing department has the highest turnover rate of 19.10%
 7. Most employees come from Ohio.
 8. Hires have reduced over time and the terminations as well.
    
@@ -88,6 +89,13 @@ sum(case when termdate is not null then 1 else 0 end) as terms from hr group by 
 group by years;
 
 ```
+### Recommendations
+1. Investigate the Auditing department for turnover issues.
+2. Enhance engagement for remote employees.
+3. Introduce retention strategies tailored to the 25-54 age group.
+4. Strengthen recruitment strategies in Ohio and replicate its success elsewhere.
+5. Modernize the hiring process to attract new talent.
+6. Introduce a structured internship program that offers mentorship, real-world projects, and a clear path to full-time roles for ages 18 to 24.
 ### Limitations
 - Some records had negative ages and these were excluded during querying(967 records). Ages used were 18 years and above.
 - Some termination dates were far into the future and were not included in the analysis. The only term dates used were those less than or equal to the current date
